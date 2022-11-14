@@ -1,0 +1,13 @@
+<h2> New Game </h2>
+<div class ="letter_box">
+<ol>
+  <% @letters.each do |letter| %>
+    <li class="btn btn-primary"><%= letter.capitalize %></li>
+  <% end %>
+</ol>
+</div>
+
+<form action="/score" method="post" data-turbo="false">
+  <input type="text" name="result" placeholder="Letters">
+  <input type="submit">
+</form>

@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+ .letter_box ol {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+
+ }
